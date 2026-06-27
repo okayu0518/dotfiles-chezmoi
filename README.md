@@ -31,7 +31,7 @@ Arch Linux をベースにした Hyprland Wayland 環境の dotfiles です。
 ### ワンライナー
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply gh:okayu0518/dotfiles-chezmoi
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply git@github.com:okayu0518/dotfiles-chezmoi.git
 ```
 
 このコマンド1つで以下の処理が自動実行されます。
