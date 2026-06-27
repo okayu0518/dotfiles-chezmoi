@@ -1,0 +1,10 @@
+# GitHub
+README.md
+LICENSE
+.github/
+
+# Git
+.gitignore
+
+# Development
+.vscode/
