@@ -1,0 +1,25 @@
+# Global ignores (all OS)
+README.md
+LICENSE
+.github/
+.gitignore
+.vscode/
+
+{{- if ne .chezmoi.os "linux" -}}
+
+# Linux-specific files (ignored on non-Linux)
+dot_bashrc
+dot_zshrc
+dot_tmux.conf
+dot_config/shell/
+dot_config/hypr/
+dot_config/waybar/
+dot_config/rofi/
+dot_config/swaync/
+dot_config/wlogout/
+dot_config/kanshi/
+dot_config/foot/
+dot_config/xfce4/
+run_onchange_install-packages.sh.tmpl
+
+{{- end -}}
