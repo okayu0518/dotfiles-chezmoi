@@ -1,0 +1,16 @@
+#!/bin/bash
+# このファイルの内容が変わった時だけ再実行される
+
+{{ if eq .chezmoi.osRelease.id "arch" -}}
+sudo pacman -S --noconfirm vim git curl wget base-devel \
+    unzip nodejs npm tmux tree ripgrep fzf fd xsel cmatrix \
+    neovim uv
+{{ else if eq .chezmoi.osRelease.id "ubuntu" -}}
+sudo apt update && sudo apt install -y vim-gtk3 git gh curl wget \
+    build-essential unzip nodejs npm tmux tree ripgrep fzf fd-find \
+    xsel neovim uv
+{{ else if eq .chezmoi.osRelease.id "fedora" -}}
+sudo dnf install -y vim-enhanced git gh curl wget unzip nodejs npm \
+    tmux tree ripgrep fzf fd-find xsel \
+    neovim uv
+{{ end -}}

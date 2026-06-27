@@ -1,0 +1,46 @@
+
+[colors.primary]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[cursor]
+unfocused_hollow = true
+style.shape = "Block"
+
+[font]
+# builtin_box_drawing = true
+size = 12.0
+normal.family = "Hack Nerd Font"
+normal.style = "Regular"
+bold.family = "Hack Nerd Font"
+bold.style = "Bold"
+italic.family = "Hack Nerd Font"
+italic.style = "Italic"
+glyph_offset.x = 0
+glyph_offset.y = 1
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+#history = 10000
+#multiplier = 3
+
+[terminal.shell]
+program = "/bin/bash"
+#args = ["--login", "-c", "tmux attach || tmux new"]
+args = ["--login"]
+
+[window]
+decorations = "full"
+dynamic_padding = true
+opacity = 0.85
+
+[window.padding]
+
+[general]
+live_config_reload = true
+
+[terminal]
+#x = 5
+#y = 5
