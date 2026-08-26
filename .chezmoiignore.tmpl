@@ -5,6 +5,11 @@ LICENSE
 .gitignore
 .vscode/
 
+# Claude generated data
+dot_claude/backups/
+dot_claude/cache/
+dot_claude/downloads/
+
 {{- if ne .chezmoi.os "linux" -}}
 
 # Linux-specific files (ignored on non-Linux)
